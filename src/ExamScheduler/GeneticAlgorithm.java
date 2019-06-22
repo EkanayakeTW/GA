@@ -55,7 +55,7 @@ public class GeneticAlgorithm {
 			tournamentPopulation.getSchedule().set(x, population.getSchedule().
 					get((int)(Math.random()*population.getSchedule().size())));
 		});
-		return null;
+		return tournamentPopulation;
 	}
 
 }

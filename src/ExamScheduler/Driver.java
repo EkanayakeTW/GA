@@ -35,7 +35,7 @@ public class Driver {
 				" | "+Schedule.getnumbOfConflicts()));
 		driver.printScheduleAsTable(population.getSchedule().get(0), generationNumber);
 		driver.ExamNumber = 1;
-		while(population.getSchedule().get(0).getFitness() != 1.0) {
+		while(population.getSchedule().get(0).getFitness() != 0.0) {
 			System.out.println("> Generation # "+ ++generationNumber);
 			System.out.println(" schedule # |                                                      ");
 			System.out.print("Exam # | Dept | Course (number, max # of students) | Hall(Capacity) | Invigilator (Id) | ExamTime (Id");

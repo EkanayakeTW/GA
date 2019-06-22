@@ -29,8 +29,8 @@ public class ClassData {
 		ExamTime examtime1 = new ExamTime("ET1", "MWF 08:30 - 10:30");
 		ExamTime examtime2 = new ExamTime("ET2", "MWF 11:00 - 13:00");
 		ExamTime examtime3 = new ExamTime("ET3", "TTF 08:30 - 10:30");
-		ExamTime examtime4 = new ExamTime("ET4", "TTF 11:00 - 13:00");
-		examtime = new ArrayList<ExamTime>(Arrays.asList(examtime1,examtime2,examtime3,examtime4));
+		//ExamTime examtime4 = new ExamTime("ET4", "TTF 11:00 - 13:00");
+		examtime = new ArrayList<ExamTime>(Arrays.asList(examtime1,examtime2,examtime3));
 		Invigilator inv1 = new Invigilator("Inv1", "Senior Lect Anjalie Gamage");
 		Invigilator inv2 = new Invigilator("Inv2", "Dr.Dasuni Navinnna");
 		Invigilator inv3 = new Invigilator("Inv3", "Dr.Kavinga Abeygunawardena");
@@ -47,10 +47,10 @@ public class ClassData {
 		Department dept1 = new Department("SE",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
 		Department dept2 = new Department("IT",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
 		Department dept3 = new Department("CS",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
-		Department dept4 = new Department("DS",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
+		/*Department dept4 = new Department("DS",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
 		Department dept5 = new Department("CSN",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
-		Department dept6 = new Department("ISE",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));
-		dept = new ArrayList<Department>(Arrays.asList(dept1,dept2,dept3,dept4,dept5,dept6));
+		Department dept6 = new Department("ISE",new ArrayList<Course>(Arrays.asList(c1,c2,c3,c4,c4,c5,c6,c7)));*/
+		dept = new ArrayList<Department>(Arrays.asList(dept1,dept2,dept3));
 		dept.forEach(x -> numOfExams += x.getCourse().size());
 		return this;
 	}
